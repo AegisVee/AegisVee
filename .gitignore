@@ -1,0 +1,7 @@
+# Ignore everything
+*
+
+# Except User Manual
+!USER_MANUAL.md
+!.gitignore
+!README.md
