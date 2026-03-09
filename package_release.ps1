@@ -1,7 +1,7 @@
 # AegisVee Distribution Packaging Script
 
 $AppName = "AegisVee"
-$Version = "2.0.0"
+$Version = "2.1.0"
 $OutputDir = "d:\Work\aegis-vee-mvp\release"
 $SourceDir = "d:\Work\aegis-vee-mvp\frontend\dist\win-unpacked"
 $ZipName = "${AppName}-v${Version}-win-x64.zip"
