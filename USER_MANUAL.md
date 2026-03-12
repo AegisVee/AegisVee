@@ -367,3 +367,19 @@ This manual corresponds to:
 - Windows packaged distribution naming:
   - `AegisVee-Core-v3.0.0-win-x64.zip`
   - `AegisVee-Team-v3.0.0-win-x64.zip`
+
+---
+
+## 20. Fan Project Import (v3.0.0 EXE)
+
+Repository includes:
+
+- `fan_project_v3.0.0.aegis`
+
+Import steps in AegisVee v3.0.0:
+
+1. Open AegisVee.
+2. Go to **Dashboard**.
+3. Click **Import System**.
+4. Select `fan_project_v3.0.0.aegis`.
+5. Wait for success message, then refresh/open the imported project.

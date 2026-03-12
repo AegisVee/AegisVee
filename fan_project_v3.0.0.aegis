@@ -1,0 +1,140 @@
+{
+  "version": "1.0",
+  "meta": {
+    "exportedBy": "AegisVee",
+    "timestamp": "2026-03-12T16:30:00+08:00",
+    "profile": "fan-demo-v3.0.0"
+  },
+  "data": {
+    "projects": [
+      {
+        "id": 1,
+        "title": "Smart Fan System",
+        "status": "success",
+        "statusText": "Demo Ready",
+        "metrics": [
+          {
+            "label": "Traceability",
+            "value": "75%"
+          }
+        ]
+      }
+    ],
+    "requirements": [
+      {
+        "key": "REQ-001",
+        "id": "REQ-001",
+        "title": "Motor speed control",
+        "description": "The BLDC motor shall achieve nominal speed {{rpm_nominal}} RPM at {{voltage_nominal}}V.",
+        "testSteps": "1. Apply {{voltage_nominal}}V.\\n2. Command max speed.\\n3. Read RPM.",
+        "expectedResult": "Motor speed is {{rpm_nominal}} RPM +/-50 RPM.",
+        "status": "Verified",
+        "parameters": [
+          { "name": "rpm_nominal", "type": "int", "value": "5000", "unit": "RPM" },
+          { "name": "voltage_nominal", "type": "float", "value": "12", "unit": "V" }
+        ],
+        "linkedTestIds": ["VM-0001"]
+      },
+      {
+        "key": "REQ-002",
+        "id": "REQ-002",
+        "title": "Airflow output",
+        "description": "The fan shall deliver at least {{cfm_target}} CFM at maximum speed.",
+        "testSteps": "1. Run at max speed.\\n2. Measure outlet airflow.",
+        "expectedResult": "Measured airflow >= {{cfm_target}} CFM.",
+        "status": "Approved",
+        "parameters": [
+          { "name": "cfm_target", "type": "float", "value": "350", "unit": "CFM" }
+        ],
+        "linkedTestIds": ["VM-0002"]
+      },
+      {
+        "key": "REQ-003",
+        "id": "REQ-003",
+        "title": "Noise limit",
+        "description": "The fan noise shall be below {{noise_limit}} dB(A) at {{distance}} meter distance.",
+        "testSteps": "1. Place sound meter at {{distance}}m.\\n2. Run max speed.\\n3. Record SPL.",
+        "expectedResult": "Noise < {{noise_limit}} dB(A).",
+        "status": "Verified",
+        "parameters": [
+          { "name": "noise_limit", "type": "float", "value": "45", "unit": "dB" },
+          { "name": "distance", "type": "float", "value": "1", "unit": "m" }
+        ],
+        "linkedTestIds": ["VM-0003"]
+      },
+      {
+        "key": "REQ-004",
+        "id": "REQ-004",
+        "title": "Motor power limit",
+        "description": "Motor assembly power consumption shall not exceed {{power_limit}}W.",
+        "testSteps": "1. Connect power analyzer.\\n2. Run max speed.\\n3. Read power.",
+        "expectedResult": "Motor power < {{power_limit}}W.",
+        "status": "Verified",
+        "parameters": [
+          { "name": "power_limit", "type": "float", "value": "45", "unit": "W" }
+        ],
+        "linkedTestIds": ["VM-0004"]
+      },
+      {
+        "key": "REQ-005",
+        "id": "REQ-005",
+        "title": "Thermal protection",
+        "description": "Controller shall auto-shutdown at {{temp_limit}} deg C winding temperature.",
+        "testSteps": "1. Heat winding.\\n2. Monitor temperature.\\n3. Verify shutdown.",
+        "expectedResult": "Auto-shutdown at {{temp_limit}} deg C.",
+        "status": "Approved",
+        "parameters": [
+          { "name": "temp_limit", "type": "float", "value": "85", "unit": "deg C" }
+        ],
+        "linkedTestIds": ["VM-0005"]
+      }
+    ],
+    "graph": {
+      "nodes": [
+        {
+          "id": "project-1",
+          "type": "default",
+          "position": { "x": 0, "y": 0 },
+          "data": { "label": "Smart Fan System" }
+        },
+        {
+          "id": "REQ-001",
+          "type": "default",
+          "position": { "x": 300, "y": -160 },
+          "data": { "label": "REQ-001 Motor speed control" }
+        },
+        {
+          "id": "REQ-002",
+          "type": "default",
+          "position": { "x": 300, "y": -40 },
+          "data": { "label": "REQ-002 Airflow output" }
+        },
+        {
+          "id": "REQ-003",
+          "type": "default",
+          "position": { "x": 300, "y": 80 },
+          "data": { "label": "REQ-003 Noise limit" }
+        },
+        {
+          "id": "REQ-004",
+          "type": "default",
+          "position": { "x": 300, "y": 200 },
+          "data": { "label": "REQ-004 Motor power limit" }
+        },
+        {
+          "id": "REQ-005",
+          "type": "default",
+          "position": { "x": 300, "y": 320 },
+          "data": { "label": "REQ-005 Thermal protection" }
+        }
+      ],
+      "edges": [
+        { "id": "e1", "source": "project-1", "target": "REQ-001", "label": "contains" },
+        { "id": "e2", "source": "project-1", "target": "REQ-002", "label": "contains" },
+        { "id": "e3", "source": "project-1", "target": "REQ-003", "label": "contains" },
+        { "id": "e4", "source": "project-1", "target": "REQ-004", "label": "contains" },
+        { "id": "e5", "source": "project-1", "target": "REQ-005", "label": "contains" }
+      ]
+    }
+  }
+}
