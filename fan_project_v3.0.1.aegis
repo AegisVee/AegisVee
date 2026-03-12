@@ -2,8 +2,8 @@
   "version": "1.0",
   "meta": {
     "exportedBy": "AegisVee",
-    "timestamp": "2026-03-12T16:30:00+08:00",
-    "profile": "fan-demo-v3.0.0"
+    "timestamp": "2026-03-12T18:30:00+08:00",
+    "profile": "fan-demo-v3.0.1"
   },
   "data": {
     "projects": [
@@ -138,3 +138,4 @@
     }
   }
 }
+

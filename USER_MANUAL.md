@@ -363,10 +363,10 @@ Vector stores:
 
 This manual corresponds to:
 
-- AegisVee `v3.0.0`
+- AegisVee `v3.0.1`
 - Windows packaged distribution naming:
-  - `AegisVee-Core-v3.0.0-win-x64.zip`
-  - `AegisVee-Team-v3.0.0-win-x64.zip`
+  - `AegisVee-Core-v3.0.1-win-x64.zip`
+  - `AegisVee-Team-v3.0.1-win-x64.zip`
 
 ---
 
@@ -374,12 +374,13 @@ This manual corresponds to:
 
 Repository includes:
 
-- `fan_project_v3.0.0.aegis`
+- `fan_project_v3.0.1.aegis`
 
 Import steps in AegisVee v3.0.0:
 
 1. Open AegisVee.
 2. Go to **Dashboard**.
 3. Click **Import System**.
-4. Select `fan_project_v3.0.0.aegis`.
+4. Select `fan_project_v3.0.1.aegis`.
 5. Wait for success message, then refresh/open the imported project.
+
