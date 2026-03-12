@@ -1,12 +1,12 @@
 param(
-    [ValidateSet("Basic", "Advanced")]
-    [string]$Edition = "Advanced"
+    [ValidateSet("Core", "Team")]
+    [string]$Edition = "Core"
 )
 
 # AegisVee Distribution Packaging Script
 
 $AppName = "AegisVee"
-$Version = "2.1.1"
+$Version = "3.0.0"
 $OutputDir = "d:\Work\aegis-vee-mvp\release"
 $SourceDir = "d:\Work\aegis-vee-mvp\frontend\dist\win-unpacked"
 $ZipName = "${AppName}-${Edition}-v${Version}-win-x64.zip"

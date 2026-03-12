@@ -1,89 +1,73 @@
-# AegisVee: Local-First Engineering OS V2.0.0
+# AegisVee v3.0.0
 
-**AegisVee** is a **Local-First** Engineering Operating System designed for embedded systems requirements management, AI-assisted analysis, and Hardware-in-the-Loop (HIL) testing. All data is stored locally on your machine, no cloud account required.
+AegisVee is a local-first Engineering Operating System for embedded systems requirement management, AI-assisted analysis, and Hardware-in-the-Loop (HIL) testing.
 
-![AegisVee Architecture](https://raw.githubusercontent.com/AegisVee/AegisVee/main/LOGO/aegis-logo.png) (Replace with actual logo if available)
+## Download
 
-## 🚀 Download V2.0.0 Release
+Get the latest packaged build from GitHub Releases:
 
-You can download the pre-packaged executable version directly from the Releases page:
+[Download Latest AegisVee Release](https://github.com/AegisVee/AegisVee/releases/latest)
 
-👉 **[Download AegisVee V2.0.0 Release](https://github.com/AegisVee/AegisVee/releases/latest)**
+For v3.0.0, the standard package name is:
 
-1. Download `AegisVee-v2.0.0-win-x64.zip`.
-2. Extract the ZIP file to your preferred location (e.g., `D:\AegisVee`).
-3. Double-click `AegisVee.exe` to launch the application.
+- `AegisVee-Core-v3.0.0-win-x64.zip`
 
-*Note: The first launch may take 10-30 seconds as the backend Engine Room initializes.*
+Optional Team package:
 
----
+- `AegisVee-Team-v3.0.0-win-x64.zip`
 
-## 🌟 Key Features
+## Quick Start
 
-* **📊 Project Dashboard**: High-level overview of project quality gates with Traffic Light indicators (Green/Yellow/Red).
-* **📝 Requirements Management**: Full CRUD interface for managing system requirements, including Excel Import/Export.
-* **🔗 Engineering Canvas (OS)**: Visual 2D/3D Node Graph for traceability and system design layout.
-* **🔬 V-Model Validation**: Integrated workbench bridging Requirements, Test Scripts (Python/Pytest), and Execution Reports for early HIL testing.
-* **🤖 AI Engineering Assistant**: Built-in RAG-powered AI chat capable of analyzing requirement quality, generating test plans, and providing SDK code snippets (Requires [Ollama](https://ollama.com/) running locally).
+1. Download and extract the ZIP file.
+2. Run `AegisVee.exe`.
+3. On first launch, complete the Setup Wizard (hardware detection, AI tier recommendation, ready).
 
----
+## Core Capabilities
 
-## ✨ What's New in V2.0.0
+- Project dashboard with quality indicators
+- Requirement and traceability management
+- Engineering OS node canvas with 2D/3D views
+- AI-assisted analysis (RAG chat with fallback mock mode)
+- AI Settings Center (provider/model/function mapping/performance monitor)
+- Plugin manager for AI extensions
+- V-model and verification workflow support
+- Draw.io import and requirement parameter propagation
 
-### 1. Hardware-in-the-Loop (HIL) Integration
+## Build From Source (Windows)
 
-AegisVee now supports connecting directly to your STM32 development boards (or other compatible hardware) to perform automated HIL testing. You can run test scripts that drive simulated inputs and collect telemetry outputs directly from the V-Model view.
-
-### 2. Built-in Test Script Editor and Saver
-
-You can now write and save Python/Pytest test scripts directly inside the frontend UI. The "Save Script" button in the Test Script Split View securely persists your code to the local backend storage, automatically linking tests to their designated requirements to ensure complete validation traceability.
-
-### 3. SD Card Log Download via CSP
-
-AegisVee introduces the capability to query and download historical log files directly from the hardware SD card using the Cubesat Space Protocol (CSP). This enables downloading historical GPS and sensor data directly into AegisVee for analysis without manually removing the SD card from the hardware.
-
----
-
-## 🛠️ For Developers: Quick Start (Build from Source)
-
-AegisVee consists of a Python FastAPI backend (Engine Room) and a React + Vite frontend (The Studio).
-
-### 1. Start the Backend Engine
+### Backend
 
 ```powershell
 cd backend
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-
-# Run dev server on port 8000
 python -m uvicorn main:app --reload --port 8000
 ```
 
-### 2. Start the Frontend Studio
+### Frontend
 
 ```powershell
 cd frontend
 npm install
-
-# Run Vite dev server
 npm run dev
 ```
 
-### 3. Packaging the App
-
-To build a standalone executable:
+### Desktop Package
 
 ```powershell
-./package_release.ps1
+cd backend
+python -m PyInstaller build_backend.spec --clean -y
+
+cd ../frontend
+npm run electron:build
+
+cd ..
+.\package_release.ps1 -Edition Core
 ```
 
----
+## Documentation
 
-## 📚 Documentation
+See the full user guide here:
 
-For detailed usage instructions, please refer to the [User Manual](USER_MANUAL.md) included in this repository.
-
-## 🛡️ License
-
-V2.0.0 Release. All rights reserved.
+[USER_MANUAL.md](USER_MANUAL.md)
