@@ -1,0 +1,20 @@
+
+:name: STM32F4 Discovery
+:description: This script runs the firmware on an STM32F4 Discovery board.
+
+$bin?=@firmware.elf
+
+# Create machine
+mach create "stm32f4_discovery"
+
+# Load platform description
+machine LoadPlatformDescription @platforms/boards/stm32f4_discovery-kit.repl
+
+# Create a terminal window
+showAnalyzer sysbus.usart2
+
+# Load the binary
+sysbus LoadELF $bin
+
+# Start simulation
+start

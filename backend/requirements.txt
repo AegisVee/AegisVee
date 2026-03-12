@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+python-multipart
+sse-starlette
+pydantic
+pyserial
+pandas
+openpyxl
+tabulate
+httpx

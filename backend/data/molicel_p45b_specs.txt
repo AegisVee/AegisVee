@@ -1,0 +1,30 @@
+Molicel INR-21700-P45B Datasheet
+
+1. General Information
+   - Manufacturer: Molicel
+   - Model: INR-21700-P45B
+   - Form Factor: 21700 (Cylindrical)
+   - Nominal Voltage: 3.6V
+   - Nominal Capacity: 4500mAh
+   - AC Impedance (1kHz): < 8 mOhm
+
+2. Mechanical Specifications
+   - Diameter: 21.55 mm +/- 0.15 mm
+   - Height: 70.15 mm +/- 0.15 mm
+   - Weight: 70g (Max)
+
+3. Performance Specifications
+   - Max Continuous Discharge Current: 45A
+   - Max Pulse Discharge Current: 60A
+   - Charge Voltage: 4.2V +/- 0.05V
+   - Standard Charge Current: 4.5A
+   - Max Charge Current: 13.5A
+
+4. Safety & Thermal
+   - Operating Temperature (Charge): 0°C to 60°C
+   - Operating Temperature (Discharge): -40°C to 60°C
+   - Over-temperature Cutoff: 80°C
+
+5. Warning
+   - Do not use in battery holders designed for 18650 cells.
+   - Ensure proper thermal management when discharging at >30A.

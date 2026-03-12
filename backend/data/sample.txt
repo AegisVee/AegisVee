@@ -1,0 +1,15 @@
+Aegis VEE MVP — sample document
+
+This is a small sample document included to let the LlamaIndex SimpleDirectoryReader find at least one file in the `backend/data/` directory.
+
+Purpose:
+- Exercise the RAG indexing flow during development.
+- Provide a short piece of text that can be used as a retrieval source for tests.
+
+Usage:
+- Leave this file in `backend/data/` and re-run `python main.py` to allow the index creation step to proceed.
+
+Sample content:
+Aegis VEE is a concept project for interactive music/AI tooling. The system demonstrates a FastAPI backend that builds a simple retrieval index from local documents and a Vite/React frontend that streams RAG responses to the UI.
+
+If you want more realistic content, drop PDFs or DOCX files into the same directory. LlamaIndex will attempt to read them if the necessary readers are installed.

@@ -1,0 +1,52 @@
+[
+    {
+        "key": "1",
+        "id": "SR-SAFE-01",
+        "title": "Watchdog Timer Refresh",
+        "description": "The system shall refresh the Independent Watchdog (IWDG) within 50ms to prevent system reset in case of deadlock.",
+        "testSteps": "1. Inject a delay loop > 50ms in the main task.\n2. Observe system reset behavior via UART.",
+        "expectedResult": "System resets and logs a watchdog timeout event.",
+        "status": "Draft",
+        "linkedApis": []
+    },
+    {
+        "key": "2",
+        "id": "SR-COMM-01",
+        "title": "CCSDS Telemetry Packet Format",
+        "description": "All telemetry downlink packets shall conform to the CCSDS 133.0-B-1 Space Packet Protocol standard.",
+        "testSteps": "1. Generate a telemetry packet.\n2. Analyze the packet header bits 0-2 (Version Number).\n3. Analyze bits 3-15 (Packet Identification).",
+        "expectedResult": "Packet Version Number is '000', Packet Type is correct.",
+        "status": "Draft",
+        "linkedApis": []
+    },
+    {
+        "key": "3",
+        "id": "SR-CTRL-01",
+        "title": "ADCS Control Loop Timing",
+        "description": "The Attitude Determination and Control System (ADCS) loop shall execute every 100ms with a jitter of less than 1ms.",
+        "testSteps": "1. Instrument the ADCS task with GPIO toggling.\n2. Connect oscilloscope to GPIO pin.\n3. Measure period statistics over 1000 cycles.",
+        "expectedResult": "Mean period = 100ms, Max deviation < 1ms.",
+        "status": "Draft",
+        "linkedApis": []
+    },
+    {
+        "key": "4",
+        "id": "SR-QUAL-01",
+        "title": "MISRA C:2012 Compliance",
+        "description": "The flight software source code shall be compliant with MISRA C:2012 Mandatory and Required rules.",
+        "testSteps": "1. Run static analysis tool (e.g., CppCheck/coverity) with MISRA configuration.\n2. Check report for violations.",
+        "expectedResult": "0 Mandatory/Required violations reported.",
+        "status": "Draft",
+        "linkedApis": []
+    },
+    {
+        "key": "5",
+        "id": "SR-PWR-01",
+        "title": "Safe Mode Power Consumption",
+        "description": "In Safe Mode, the total power consumption shall not exceed 500mW.",
+        "testSteps": "1. Command satellite into Safe Mode.\n2. Measure current draw at 3.3V and 5V rails.",
+        "expectedResult": "Total power < 500mW.",
+        "status": "Draft",
+        "linkedApis": []
+    }
+]

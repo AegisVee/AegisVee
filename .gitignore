@@ -1,7 +1,81 @@
-# Ignore everything
-*
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+*.egg
+dist/
+build/
+*.spec
 
-# Except User Manual
-!USER_MANUAL.md
-!.gitignore
-!README.md
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Node.js
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+*.bkp
+
+# Logs
+*.log
+backend_error*.log
+frontend_error.log
+frontend_test.log
+backend_test*.log
+frontend_retry.log
+startup_log.txt
+backend_log.txt
+
+# Database / vector store
+backend/lancedb/
+backend/chroma_db/
+lancedb/
+
+# Build artifacts
+backend/dist/
+backend/build/
+backend/backend/
+release/
+AegisVee/
+
+# Runtime data (seed script regenerates this)
+backend/data/projects/
+backend/data/ai_settings.json
+backend/data/ai_plugins_registry.json
+
+# Temp files
+tmp_tail.txt
+prd_content.txt
+output.txt
+backend/output.txt
+*.tmp
+
+# Cypress reports/logs
+frontend/cypress_report*.json
+frontend/cypress_run.log
+
+# Claude internal
+.claude/
+
+# Electron build output
+frontend/dist/
+
+# Test cache
+.pytest_cache/
+backend/.pytest_cache/
+
+# Misc
+package-lock.json
+renodes/
+valispace_extracts/

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d67e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00b96b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="vGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0f7ef;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Shield shape -->
+  <path d="M256 28 L462 108 C462 108 472 320 256 484 C40 320 50 108 50 108 Z" fill="url(#shieldGrad)" stroke="#009e5a" stroke-width="8"/>
+  <!-- Inner shield border -->
+  <path d="M256 60 L438 130 C438 130 446 312 256 456 C66 312 74 130 74 130 Z" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.3"/>
+  <!-- V letterform -->
+  <path d="M160 150 L256 380 L352 150 L310 150 L256 310 L202 150 Z" fill="url(#vGrad)"/>
+</svg>

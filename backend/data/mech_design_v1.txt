@@ -1,0 +1,16 @@
+Project Aegis Mechanical Design Specification - Battery Module
+
+1. Component: Battery Holder Assembly (Part # MECH-001)
+   - Overview: 4S2P Battery holder configuration.
+   - Compatible Cell Type: 18650 Cylindrical Cells ONLY.
+   - Slot Diameter: 18.2 mm (Max tolerance +0.1mm).
+   - Slot Length: 65.2 mm (Spring loaded).
+   - Material: ABS Plastic (UL94-V0).
+
+2. Thermal Interface
+   - Passive cooling via aluminum chassis contact.
+   - Max design thermal load: 20W per module.
+
+3. Constraints
+   - Total module height cannot exceed 70mm due to enclosure limits.
+   - Weight budget: 500g per module.

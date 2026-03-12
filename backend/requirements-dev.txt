@@ -1,0 +1,7 @@
+# Development and testing dependencies — NOT bundled into backend.exe
+-r requirements.txt
+pytest
+pytest-asyncio
+pytest-socket
+ragas
+llama-index-embeddings-huggingface

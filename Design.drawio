@@ -1,0 +1,40 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.5.2 Chrome/142.0.7444.265 Electron/39.6.1 Safari/537.36" version="29.5.2">
+  <diagram name="Page-1" id="knwBi79i08MwQqnA8OvH">
+    <mxGraphModel dx="2696" dy="678" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jm4Ybpo0FusHtSV9FfMF-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="640" width="969" x="-90" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="yI1taYNSJuOrxBSYKUZY-5" edge="1" parent="1" source="yI1taYNSJuOrxBSYKUZY-1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="yI1taYNSJuOrxBSYKUZY-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yI1taYNSJuOrxBSYKUZY-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="System Requirement&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="200" x="-840" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="yI1taYNSJuOrxBSYKUZY-6" edge="1" parent="1" source="yI1taYNSJuOrxBSYKUZY-2" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" target="yI1taYNSJuOrxBSYKUZY-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yI1taYNSJuOrxBSYKUZY-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Test Case" vertex="1">
+          <mxGeometry height="80" width="170" x="-470" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="yI1taYNSJuOrxBSYKUZY-7" edge="1" parent="1" source="yI1taYNSJuOrxBSYKUZY-3" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" target="yI1taYNSJuOrxBSYKUZY-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yI1taYNSJuOrxBSYKUZY-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Test Step" vertex="1">
+          <mxGeometry height="70" width="170" x="-470" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="yI1taYNSJuOrxBSYKUZY-9" edge="1" parent="1" source="yI1taYNSJuOrxBSYKUZY-4" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" target="yI1taYNSJuOrxBSYKUZY-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yI1taYNSJuOrxBSYKUZY-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Test Critia" vertex="1">
+          <mxGeometry height="80" width="170" x="-470" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="yI1taYNSJuOrxBSYKUZY-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Is Verified?" vertex="1">
+          <mxGeometry height="80" width="170" x="-470" y="830" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

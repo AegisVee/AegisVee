@@ -1,0 +1,5 @@
+llama-index
+llama-index-llms-ollama
+llama-index-vector-stores-lancedb
+llama-index-embeddings-ollama
+lancedb

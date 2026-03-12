@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "title": "Smart Fan System",
+        "status": "warning",
+        "statusText": "Review Needed",
+        "metrics": [
+            {
+                "label": "Traceability",
+                "value": "87%"
+            }
+        ]
+    }
+]
